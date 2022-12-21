@@ -1,0 +1,89 @@
+.search .no-results.not-found {
+    margin-top: 130px;
+    margin-bottom: 100px !important;
+}
+.search.search-results {
+    #main {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -1em;
+        padding-bottom: 80px;
+        .page-header {
+            width: 100%;
+            padding: 80px 1em 30px;
+        }        
+        article {
+            width: 25%;
+            padding: 0 1em;
+            margin-bottom: 3em;
+            .inside-article {
+                display: flex;
+                flex-wrap: wrap;
+                border-radius: 15px;
+                overflow: hidden;
+                box-shadow: 0 3px 7px 0 rgba(0,0,0,.1);
+                background-color: #FFF;
+                text-decoration: none;
+                .entry-header {
+                    width: 100%;
+                    padding: 0 25px 5px;
+                }
+                .post-image {
+                    &:not(.default) {
+                        object-fit: cover;
+                    }
+                    &.default {
+                        object-fit: contain;
+                        padding: 15%;
+                    }
+                    height: 300px;     
+                    margin-bottom: 25px;   
+                }
+                .entry-summary {
+                    margin-top: 0;
+                    padding: 0 25px 25px;
+                    min-height: 120px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .search.search-results {
+        #main {
+            .page-header {
+                padding: 50px 1em 30px;
+            }
+            article {
+                width: calc(100% / 3);
+                padding: 0 1em;
+                margin-bottom: 3em;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .search.search-results {
+        #main {
+            article {
+                width: 50%;
+                padding: 0 1em;
+                margin-bottom: 3em;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .search.search-results {
+        #main {
+            article {
+                width: 100%;
+                padding: 0 1em;
+                margin-bottom: 3em;
+            }
+        }
+    }
+}

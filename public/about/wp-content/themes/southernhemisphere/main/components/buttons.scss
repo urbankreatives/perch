@@ -1,0 +1,130 @@
+body {
+    .primary-button {
+        background-color: $green;
+        min-width: 125px;
+        min-height: 35px;
+        line-height: 35px;
+        text-align: center;
+        border-radius: 2em;
+        color: #FFF;
+        text-transform: uppercase;
+    }
+    .wp-block-buttons {
+        .wp-block-button {
+            &.is-style-slim-button {
+                .wp-block-button__link {
+                    height: 35px;
+                    line-height: 35px;
+                    padding: 0 25px;
+                }
+                .wp-block-button__link {
+                    &:not(.has-base-3-background-color) {
+                        border: 1px solid #575757;
+                        &:hover {
+                            background-color: #FFF;
+                            color: #575757!important;
+                        }
+                    }
+                    &.has-base-3-background-color {
+                        border: 1px solid $green;
+                        color: #FFF;
+                        &:hover {
+                            background-color: #FFF!important;
+                            color: $green!important;
+                        }
+                    }
+                }
+            }
+            &.is-style-slim-outlined {
+                .wp-block-button__link {
+                    height: 35px;
+                    line-height: 35px;
+                    padding: 0 25px;
+                    border: 1px solid #575757;
+                    color: #575757;
+                    background-color: #FFF;
+                    &:hover {
+                        background-color: #575757;
+                        color: #FFF;
+                    }
+                }
+            }
+            &.is-style-jumbo-button {
+                .wp-block-button__link {
+                    height: 45px;
+                    line-height: 45px;
+                    padding: 0 25px;
+                    border: 1px solid #575757;
+                    color: #575757;
+                    background-color: #FFF;
+                    &:hover {
+                        background-color: #575757;
+                        color: #FFF;
+                    }
+                    &.has-base-3-background-color {
+                        background-color: $green;
+                        border: 1px solid $green;
+                        color: #FFF;
+                        &:hover {
+                            background-color: #FFF!important;
+                            color: $green;
+                        }
+                    }
+                    &.has-global-color-9-background-color {
+                        border: 1px solid #FFF;
+                        &:hover {
+                            background-color:#575757!important;
+                            color: #FFF!important;
+                            border-color: #575757;
+                        }
+                    }
+                }
+            }
+            &.is-style-jumbo-outlined {
+                .wp-block-button__link {
+                    height: 45px;
+                    line-height: 45px;
+                    padding: 0 25px;
+                    background-color: #FFF;
+                    color:#575757;
+                    border: 1px solid #575757;
+                    border-radius: 2em;
+                    &:hover {
+                        background-color: #575757;
+                        color: #FFF;
+                    }
+                }
+            }
+            &.is-style-arrow-button {
+                .wp-block-button__link {
+                    background-color: transparent;
+                    color: #575757;
+                    transition: all 0.5s ease-in-out;
+                    padding: 0;
+                    font-weight: 500;
+                    &:after {
+                        content: '';
+                        display: inline-block;
+                        margin-left: 12px;
+                        width: 35px;
+                        height: 12px;
+                        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='34.945' height='11.541' viewBox='0 0 34.945 11.541'%3E%3Cpath id='icons8-right-arrow-90' d='M30.981,6.76H3.469a5.608,5.608,0,0,1-1.687-.034A9.657,9.657,0,0,1,0,5.7c.618-.326,1.218-.7,1.862-.957A2.884,2.884,0,0,1,2.873,4.72H31.026l.27-.39A39.493,39.493,0,0,1,28.438,1.6c-.311-.353-.224-1.054-.318-1.6.585.068,1.362-.079,1.72.242,1.6,1.435,3.069,3.012,4.6,4.52.734.722.622,1.352-.069,2.028-1.5,1.465-2.926,3-4.481,4.4-.375.337-1.137.244-1.721.349.1-.582,0-1.322.329-1.717a33.245,33.245,0,0,1,2.734-2.691C31.149,7.008,31.065,6.884,30.981,6.76Z' fill='%2389cb95' fill-rule='evenodd'/%3E%3C/svg%3E");
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        transition: all 0.5s ease-in-out;
+                    }
+                    &:hover {
+                        color: #424242;
+                        &:after {
+                            margin-left: 20px;
+                        }
+                    }
+                }
+            }
+            .wp-block-button__link {
+                min-width: 99px;
+                transition: all 0.5s ease-in-out;
+            }
+        }
+    } 
+}

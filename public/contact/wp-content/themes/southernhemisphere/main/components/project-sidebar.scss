@@ -1,0 +1,24 @@
+.project-sidebar-column {
+    .image-carousel-module-outer {
+        line-height: 0;
+        figure {
+            margin-bottom: 0;
+            img {
+                height: 275px;
+                border-radius: 15px;
+                object-fit: cover;
+            }
+        }
+        &.slick-slider {
+            margin-bottom: 0px;
+            .slick-dots {
+                bottom: 20px;
+                li {
+                    button {
+                        background-color: #FFF;
+                    }  
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,84 @@
+.application-column {
+    border: 1px solid $green;
+    border-radius: 11px;
+    padding: 30px 30px 50px;
+    .wpcf7 form.sent .wpcf7-response-output {
+        border-color: #89cb95;
+        border-width: 1px;
+        border-radius: 6px;
+    }
+    .radio-outer {
+        margin-bottom: 20px!important;
+        .career-radios {
+            input[type="radio"] {
+                    appearance: none;
+                ~ span {
+                    margin-left: 18px;
+                    &::before {
+                        content: '';
+                        background-color: transparent;
+                        border-radius: 50%;
+                        width: 14px;
+                        height: 14px;
+                        position: absolute;
+                        left: 0;
+                        top: 4px;
+                        border: 1px solid #89cb95;
+                    }
+                }                
+                &:checked {
+                    ~ span::after {
+                        content: '';
+                        width: 6px;
+                        height: 6px;
+                        background-color: #89cb95;
+                        position: absolute;
+                        border-radius: 50%;
+                        left: 4px;
+                        top: 8px;
+                    }
+                }
+            }
+            
+            .wpcf7-list-item.first {
+                margin-left: 0;
+            }
+        } 
+    } 
+    .cv-upload-button {        
+        width: 100%;
+        margin-bottom: 30px;
+        margin-top: -13px;
+        .codedropz-upload-handler {
+            border-color: #89cb95;
+            .codedropz-upload-inner {
+                color: #989898;
+                font-size: 14px;
+                .cd-upload-btn {
+                    color: #989898;
+                }
+            }
+        }
+        .pos-abs {
+            z-index: 1;
+            left: 0;
+            bottom: 3px;
+            font-size: 14px;
+            position: relative;
+            color: #989898;
+        }
+        // .wpcf7-form-control-wrap {
+        //     border: 1px solid $green;
+        //     width: 100%;
+        //     display: flex;
+        //     border-radius: 2em;
+        //     height: 46px;
+        //     align-items: center;
+        //     padding: 0 15px;
+        //     input {
+        //         color: #989898;
+        //         font-size: 14px;
+        //     }
+        // }
+    } 
+}

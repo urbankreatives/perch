@@ -1,0 +1,27 @@
+.home-quotes-module-outer {
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 2em;
+    .wp-block-group {
+        p {
+            font-weight: 400;
+            line-height: 28px;
+        }
+    }
+    .slick-dots {
+        bottom: -85px;
+        min-height: 60px;
+        li button {
+            background-color: #989898;
+        }
+    } 
+    .slick-slide-arrows {
+        padding: 62px 8%;
+        .slick-prev.slick-arrow {
+            left: -9%;
+        }
+        .slick-next.slick-arrow {
+            right: -9%;
+        }
+    }
+}

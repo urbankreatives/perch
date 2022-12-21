@@ -1,0 +1,62 @@
+.course-sidebar-column {
+    .course-cost-module-outer {
+        padding: 40px 35px 25px;
+        border-radius: 15px;
+        margin-top: -150px;
+        z-index: 10;
+        position: relative;
+        .wp-block-column {
+            > p:not(:last-child) {
+                padding-bottom: 15px;
+            }
+            p {
+                font-weight: 400;
+            }
+            .wp-block-button.is-style-jumbo-button {
+                margin-bottom: 0;
+            }
+            &:not(:first-child) {
+                margin-left: 0;
+            }
+        }
+    }
+    .trainers-module-outer {
+        padding: 70px 40px;
+        border-radius: 15px;
+    }
+    .course-quotes-module-outer {
+        padding: 60px 40px;
+        border-radius: 15px;
+        .slick-dots {
+            bottom: -44px;
+            li button {
+                background-color: $ligt_green;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .course-sidebar-column {
+        .course-cost-module-outer {
+            margin-top: 0px;
+            > .wp-block-columns > .wp-block-column {
+                flex-basis: 50% !important;
+            }
+            .wp-block-buttons.is-content-justification-right {
+                justify-content: center;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .course-sidebar-column {
+        .course-cost-module-outer {
+            padding: 40px 15px 25px;
+        }
+        .trainers-module-outer, .course-quotes-module-outer {
+            padding: 40px 15px;
+        }
+    }
+}

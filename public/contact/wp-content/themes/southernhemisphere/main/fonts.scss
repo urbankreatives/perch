@@ -1,0 +1,47 @@
+@font-face {
+     font-family: 'Avenir Next';
+     src: url('./assets/font/AvenirNextLTPro-Bold.eot');
+     src: local('Avenir Next LT Pro Bold'), local('AvenirNextLTPro-Bold'),
+          url('./assets/font/AvenirNextLTPro-Bold.eot?#iefix') format('embedded-opentype'),
+          url('./assets/font/AvenirNextLTPro-Bold.svg#AvenirNextLTPro-Bold') format('svg'),
+          url('./assets/font/AvenirNextLTPro-Bold.ttf') format('truetype'),
+          url('./assets/font/AvenirNextLTPro-Bold.woff') format('woff'),
+          url('./assets/font/AvenirNextLTPro-Bold.woff2') format('woff2');
+     font-weight: 700;
+     font-style: normal;
+   }
+   
+@font-face {
+     font-family: 'Avenir Next';
+     src: url('./assets/font/AvenirNextLTPro-It.eot');
+     src: local('Avenir Next LT Pro It'), local('AvenirNextLTPro-It'),
+          url('./assets/font/AvenirNextLTPro-It.eot?#iefix') format('embedded-opentype'),
+          url('./assets/font/AvenirNextLTPro-It.svg#AvenirNextLTPro-It') format('svg'),
+          url('./assets/font/AvenirNextLTPro-It.ttf') format('truetype'),
+          url('./assets/font/AvenirNextLTPro-It.woff') format('woff'),
+          url('./assets/font/AvenirNextLTPro-It.woff2') format('woff2');
+     font-weight: 300;
+     font-style: italic;
+   }
+
+@font-face {
+     font-family: 'Avenir Next';
+     src: url('./assets/font/AvenirNextLTPro-Regular.eot');
+     src: local('Avenir Next LT Pro Regular'), local('AvenirNextLTPro-Regular'),
+          url('./assets/font/AvenirNextLTPro-Regular.eot?#iefix') format('embedded-opentype'),
+          url('./assets/font/AvenirNextLTPro-Regular.svg#AvenirNextLTPro-Regular') format('svg'),
+          url('./assets/font/AvenirNextLTPro-Regular.ttf') format('truetype'),
+          url('./assets/font/AvenirNextLTPro-Regular.woff') format('woff'),
+          url('./assets/font/AvenirNextLTPro-Regular.woff2') format('woff2');
+     font-weight: normal;
+     font-style: normal;
+   }
+   
+
+h1, h2, h3, h4, h5, h6 {
+     font-family: 'Avenir Next';
+}
+  
+  
+  
+  

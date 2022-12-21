@@ -1,0 +1,15 @@
+.slick-dots {
+    left: 0;
+    li {
+        width: 11px;
+        button {
+            opacity: 1;
+            border-radius: 50%;
+            width: 12px;
+            height: 12px;
+            &::before {
+                content: none;
+            }
+        }
+    }
+}

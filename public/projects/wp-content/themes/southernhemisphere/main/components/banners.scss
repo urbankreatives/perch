@@ -1,0 +1,100 @@
+body {
+    .banner-outer {
+        @media only screen and (min-width: 767px) {
+            padding: 1em 25px;
+        } 
+        .wp-block-column:not(:first-child) {
+            margin-left: 0;
+        }
+        .header-max-width {
+            max-width: 480px;
+        }    
+        .hero-text {
+            padding-right: 50px;
+        }           
+    }
+    .small-banner {
+        .inner-group {
+            max-width: 1120px;
+            .header-max-width {
+                &.about-us {
+                    max-width: 450px;
+                }
+                &.resources {
+                    max-width: 420px;
+                }
+                &.contact {
+                    max-width: 450px;
+                }
+                &.training {
+                    max-width: 820px;
+                }
+                &.article {
+                    max-width: 720px;
+                }
+            }
+        }        
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .banner-outer {
+        .hero-text {
+            padding-right: 3%;
+            padding-left: 2%;
+        }
+        &.big-banner {
+            min-height: 450px!important;
+            padding: 27px 20px 10px;
+        }
+        &.small-banner {
+            padding: 27px 20px 10px;
+        }
+        .wp-block-column {
+            &:last-child {
+                order: 1;
+                figure {
+                    margin-bottom: 0;
+                    img {
+                        width: 100%;
+                        max-height: 350px;
+                        object-fit: contain;
+                        padding-top: 10px;
+                    }  
+                }                              
+            }
+            &:first-child {
+                order: 2;
+                .header-max-width {
+                    max-width: 100%;
+                    margin-bottom: 23px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    body {
+        .big-banner {
+            min-height: 450px!important;
+            .wp-block-column {
+                flex-basis: 100% !important;
+                text-align: center;
+            }
+            .hero-text {
+                padding-right: 0;
+                padding-left: 0;
+            }
+        }
+    }    
+}
+
+@media only screen and (max-width: 600px) {
+    .big-banner {
+        min-height: 450px!important;
+        .wp-block-column {
+            flex-basis: 100% !important;
+        }
+    }
+}

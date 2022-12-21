@@ -1,0 +1,43 @@
+.slick-next {
+    &.slick-arrow {
+        &:not(.slick-disabled) {
+            border-top: 2px solid #505759;
+            border-right: 2px solid #505759;
+            transition: all 0.3s ease-in-out;
+        }
+        &.slick-disabled {
+            border-top: 2px solid transparent;
+            border-left: 2px solid transparent;
+            transition: all 0.3s ease-in-out;
+        }
+        transform: rotate(45deg) translateY(-50%);
+        height: 32px;
+        width: 32px;
+        right: -5%;
+        &:before {
+            content: none;
+        }
+    }
+}
+.slick-prev {
+    &.slick-arrow {
+        &:not(.slick-disabled) {
+            border-top: 2px solid #505759;
+            border-left: 2px solid #505759;
+            transition: all 0.3s ease-in-out;
+        }
+        &.slick-disabled {
+            border-top: 2px solid transparent;
+            border-left: 2px solid transparent;
+            transition: all 0.3s ease-in-out;
+        }
+        transform: rotate(-45deg) translateY(-50%);
+        height: 32px;
+        width: 32px;
+        left: -5%;
+        &:before {
+            content: none;
+        }
+    }
+    
+}
