@@ -1,0 +1,167 @@
+.modal-overlay {
+    &:not(.active) {
+        position: absolute;
+        width: 0vw;
+        height: 0vh;
+        top: 0;
+        background-color:rgba(0,0,0,0.6);
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        visibility: hidden;
+        overflow: hidden;
+    }
+    &.active {
+        visibility: visible;
+        z-index: 100;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        background-color:rgba(0,0,0,0.6);
+        opacity: 1;
+        transition: opacity 0.3s ease-in-out;
+        overflow-y: scroll;
+        padding-bottom: 4em;
+        .modal-outer {
+            position: relative;
+            top: 4em;
+            left: 50%;
+            background-color: #FFF;
+            width: 49vw;
+            min-height: 61vh;
+            height: auto;
+            transform: translateX(-50%);
+            border-radius: 7px;
+            padding: 3.4%;
+            margin-bottom: 2em;
+            .modal-inner {
+                display: flex;
+                flex-wrap: wrap;
+                .team-image {
+                    @media only screen and (min-width: 630px) {
+                        max-width: 44%;
+                    }
+                    line-height: 0;
+                    img {
+                        height: 455px;
+                        max-width: 315px;
+                        width: 100%;
+                        object-fit: cover;
+                        border-radius: 15px;
+                    }
+                }
+                .popup-content {
+                    @media only screen and (min-width: 630px) {
+                        max-width: 56%;
+                        padding-left: 6%;
+                    }          
+                    .team-terms-wrapper {
+                        padding: 7px 0;
+                        .team-term {
+                            color: #989898;
+                            font-weight: 400;
+                            line-height: 1.2em;
+                            &.separator:not(:last-child)::after {
+                                content: "/";
+                                padding: 0 4px;
+                            }
+                        }
+                    }
+                    .team-social-wrapper {
+                        padding-bottom: 20px; 
+                        display: flex;
+                        a {                            
+                            background-color: #39282c;
+                            width: 30px;
+                            height: 30px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border-radius: 50%;
+                            border: none;
+                            padding: 0;
+                            margin-right: 10px;
+                            svg {
+                                max-width: 30px;
+                                height: 30px;
+                            }
+                        }
+                    }
+                }
+                .close-popup {
+                    position: absolute;
+                    right: 25px;
+                    top: 25px;
+                    cursor: pointer;
+                    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24.187' height='22.472' viewBox='0 0 24.187 22.472'%3E%3Cg id='Group_79' data-name='Group 79' transform='translate(-1137.823 -377.764)'%3E%3Cline id='Line_20' data-name='Line 20' x1='22.833' y2='21' transform='translate(1138.5 378.5)' fill='none' stroke='rgba(80,77,77,0.7)' stroke-width='2'/%3E%3Cline id='Line_21' data-name='Line 21' x2='22.833' y2='21' transform='translate(1138.5 378.5)' fill='none' stroke='rgba(80,77,77,0.7)' stroke-width='2'/%3E%3C/g%3E%3C/svg%3E");
+                    width: 25px;
+                    height: 25px;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+    }    
+}
+
+@media only screen and (min-width: 991px) and (max-width: 1400px) {
+    .modal-overlay {
+        &.active {
+            .modal-outer {
+                width: 65vw;
+            }
+        }
+        &.course-enquiry {
+            &.active {
+                .modal-outer {
+                    width: 50vw;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 990px) {
+    .modal-overlay.active .modal-outer {
+        width: 94vw;
+        margin: 0 20px;
+        left: calc(50% - 20px);
+    }
+}
+
+@media only screen and (max-width: 630px) {
+    .modal-overlay.active {
+        .modal-outer {
+            padding: 40px 3.4% 3.4%;
+            margin: 10px 20px;
+            top: 0;
+            transform: translateX(-50%);
+            .modal-inner  {
+                .close-popup {
+                    right: 10px;
+                    top: 10px; 
+                    width: 22px;
+                    height: 22px;
+                }
+                .team-image {
+                    max-width: 100%;
+                    width: 100%;
+                    img {
+                        height: unset;
+                        max-width: 100%;
+                        width: 100%;
+                        max-height: 310px;
+                        margin-bottom: 13px;
+                        object-position: top;
+                    }
+                } 
+                .popup-content {
+                    max-width: 100%;
+                    padding-left: 0;
+                }
+            }
+            
+        }
+    } 
+}
+

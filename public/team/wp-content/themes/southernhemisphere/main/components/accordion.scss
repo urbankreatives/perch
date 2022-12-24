@@ -1,0 +1,43 @@
+.wp-block-wwx-accordions {
+    box-shadow: 0 0px 7px 0 rgba(0,0,0,.1);
+    padding: 20px 25px;
+    border-radius: 15px;
+    margin-bottom: 28px;
+    .accordion-title {
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .accordion-title-text {
+            line-height: 1.3;
+            height: auto;
+            color: #418181;
+            margin-bottom: 0;
+            margin-right: 20px;
+	        font-size: 1.45em;
+        }
+        .accordion-title-icon svg {
+            stroke: #418181;
+        }
+        svg {
+            transition: all 0.2s ease-in-out;
+            path {
+                fill: $blue;
+            }
+        }
+    }
+    &.active {
+        .accordion-content {
+            padding-top: 10px;
+            display: block!important;
+            ul {
+                margin-left: 30px;
+                margin-bottom: 20px;
+            }
+        }
+        svg {
+            transform: rotate(90deg);
+        }
+    }
+}
+

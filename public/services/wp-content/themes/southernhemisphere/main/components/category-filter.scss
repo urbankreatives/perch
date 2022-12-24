@@ -1,0 +1,30 @@
+.category-filter-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    .filter-term {
+        font-size: 14px;
+        padding: 0 18px;
+        text-align: center;
+        margin-right: 10px;
+        min-width: 75px;
+        height: 35px;
+        line-height: 35px;
+        border: 1px solid #AEA4A4;
+        border-radius: 2em;
+        cursor: pointer;
+        &.active {
+            background-color: #F2F0F0;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 991px) {
+    .category-filter-wrapper {
+        margin-bottom: 30px;
+        .filter-term {
+            margin-bottom: 15px;
+        }
+    }
+}

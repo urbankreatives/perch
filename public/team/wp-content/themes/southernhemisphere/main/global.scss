@@ -1,0 +1,211 @@
+body {
+    overflow-x: hidden;
+    &.logged-in { 
+        #page {
+            margin-top: 82px;
+        }
+    }
+    &:not(.logged-in) {
+        #page {
+            margin-top: 82px;
+        }
+    }
+    &.single {
+        #page {
+            article {
+                .entry-content {
+                    margin-top: 0;
+                }
+            }
+        }
+        .wp-block-embed.is-type-video {
+            border-radius: 10px;
+            overflow: hidden;
+        }
+    }
+    .wp-block-group.alignfull {
+        &:not(.google-map) {
+            padding: 0 25px;
+        }
+    }  
+    p > a {
+        text-decoration: none;
+    }
+    .wp-block-group.alignfull > .wp-block-group {
+        > * {
+            padding: 0 25px;
+        }
+    }
+    ol,ul{
+        margin:1em 0 1.5em 2em;
+    }
+}
+
+//Custom Classes
+.wwx-mb-0 {
+    margin-bottom: 0!important;
+}
+.wwx-mb-1 {
+    margin-bottom: 10px !important;
+}
+.wwx-mb-2 {
+    margin-bottom: 20px !important;
+}
+.wwx-mb-3 {
+    margin-bottom: 30px !important;
+}
+.wwx-mb-4 {
+    margin-bottom: 40px !important;
+}
+.wwx-mb-5 {
+    margin-bottom: 50px !important;
+}
+.relative-group {
+    position: relative;
+    z-index: 1;
+}
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+.img-radius-11 img {
+    border-radius: 11px !important;
+}
+.border-radius-15 {
+    border-radius: 15px;
+}
+.wwx-w-100 {
+    width: 100%;
+}
+.color-white {
+    color: #FFF;
+}
+.wwx-mb-20 {
+    margin-bottom: 20px!important;
+}
+.wwx-hidden {
+    display: none;
+}
+.white a, .white {
+    color: #fff !important;
+}
+
+ol.big-numbers { 
+    counter-reset: item;
+    list-style-type: none;
+    margin: 0px 0 30px;
+    @media only screen and (min-width: 768px) {
+        max-width: 435px;
+    }
+    
+    li { 
+        display: flex;
+        align-items: center;
+        position: relative;
+        min-height: 60px;
+        padding-left: 50px;
+        margin: 0 0 20px;
+        
+        &::before {
+            content: counter(item);
+            counter-increment: item;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            font-size: 60px;
+            font-weight: 700;
+            line-height: 1;
+            color: #ce97c4;
+        }
+        @media only screen and (min-width: 768px) {
+            &:nth-child(odd) {
+                max-width: 280px;
+            }
+            &:nth-child(6) {
+                max-width: 360px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    body .wp-block-group.alignfull > .wp-block-group > * {
+        padding: 0px 0px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .overflow-width-150 {
+        display: block;
+        width: calc(100% + 150px);
+    }
+}
+
+@media only screen and (min-width: 1080px) {
+    .mobile-only {
+        display: none;
+    }
+}
+
+
+
+//Typography Class Responsiveness
+@media only screen and (max-width: 768px) {
+    .has-size-h-1-font-size {
+        font-size: 2.3em!important;
+    }
+    .has-h-2-bigger-font-size {
+        font-size: 1.8em!important;
+    }
+    .has-size-h-2-font-size {
+        font-size: 1.675em!important;
+    }
+    .has-size-h-2-font-size {
+        font-size: 1.675em!important;
+    }
+    .has-size-h-3-font-size {
+        font-size: 1.3em!important;
+    }
+    .has-size-h-4-font-size {
+        font-size: 1.1em!important;
+    }
+    .wp-block-columns {
+        &:not(.is-not-stacked-on-mobile) {
+            > .wp-block-column {
+                &:not(:only-child) {
+                    flex-basis: 100% !important;
+                    
+                    &:nth-child(2n) {
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .g {
+        figure {
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }        
+    }
+    ul {
+        margin-left: 30px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    body .wp-block-group.alignfull > .wp-block-group > * {
+		padding: 0px;
+	}
+}
